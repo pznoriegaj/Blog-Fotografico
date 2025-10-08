@@ -3,6 +3,12 @@
 <head>
     <title>Visual Beast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        article p {
+            max-width: 400px;
+            margin-bottom: 12px;
+        }
+    </style>
 <body>
     <header>
        <h1>Visual Beast</h1>
@@ -11,6 +17,20 @@
         <p>Bienvenido a VisualBeast, un diario que te muestra mi vision del mundo con musica.</p>
     </div>
     <section>
+        <article>
+            <h2>Inicio</h2>
+            <p>Explora mi blog para descubrir fotografias impresionantes, acompañadas de musica que complementa cada imagen y una ligera anecdota que le da vida a cada captura.</p>
+        </article>
+        <article>
+            <h2>Subir Contenido</h2>
+            <form>
+                <label for="archivo">Selecciona una Foto:</label><!--Seccion unicamente como prueba, aun no tiene funcionalidad-->
+                <input type="file" id="archivo" name="archivo" accept="image/*">
+                <button type="button" disabled>Subir Foto</button>
+                <p style="color: silver; font-size:small;">Esta función es solo demostrativa y no está operativa en este momento.
+                </p>
+            </form>
+        </article>
         <article>
             <h2>Sobre mi</h2>
             <p>Soy un apasionado de la musica y el arte visual, y he creado este espacio para mi vision del mundo.</p>
@@ -45,12 +65,19 @@
             <img src="Foto/Bibliote Vasconselos.jpg" width="300" height="400" alt="Biblioteca Vasconcelos">
             <p>Uno de los monumentos más emblemáticos de la Ciudad de México. 
                 Pareciera salir de las peliculas de ciencia ficcion, portales a otros mundos y un basto mas de conocimeinto.</p>
+
             <img src="Foto/Vasconcelos.jpg" width="300" height="400" alt="Vasconcelos">
             <p>El interior de la Biblioteca Vasconcelos, con su impresionante arquitectura y diseño moderno, es un lugar que inspira a aprender y explorar nuevos conocimientos.</p>
+
+            <img src="Foto/Museo Soumaya.jpg" width="300" height="400" alt="Museo Soumaya">
+            <p>El Museo Soumaya, con su arquitectura futurista y su impresionante colección de arte, es un lugar que no te puedes perder en la Ciudad de México.</p>
+
             <img src="Foto/Evolucion en la telefonia.jpg" width="500" height="400" alt="Evolucion en la telefonia">
             <p>La evolucion de la telefonia movil, desde los primeros modelos hasta los smartphones modernos, ha sido impresionante. 
                 Esta exposicion capturada en otro de los monumentos arquitectonicos mas emblematicos de la Ciudad de Mexico, el impresionante y hermoso Museo Soumaya.</p>
+
             <img src="Foto/Sagrado Corazon.jpg" width="300" height="400" alt="Sagrado Corazon">
+            <p>Una de las exposiciones que me parecio maravillosa fue los cuadros del sagrado Corazon, el comtraste que generaban esos 5 cuadros fue una de mis favortias.</p>
         <article>
             <h2>Últimas Publicaciones</h2>
             <p>Aquí puedes encontrar mis últimas publicaciones en el blog:</p>
