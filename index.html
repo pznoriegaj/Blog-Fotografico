@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <title>Visual Beast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Fuente para títulos -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
+        /* Tipografía: h1 (serif elegante) y h2 (sans moderna) */
+        h1 {
+            font-family: "Playfair Display", Georgia, serif;
+            font-weight: 700;
+            font-size: 2.4rem;
+            line-height: 1.05;
+            letter-spacing: 0.4px;
+            margin: 0 0 0.4rem 0;
+        }
+        h2 {
+            font-family: "Montserrat", Arial, sans-serif;
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 1.2;
+            letter-spacing: 0.3px;
+            margin: 0 0 0.6rem 0;
+            text-transform: none;
+        }
+
         .redes-sociales i {
             margin-right: 8px;
         }
         .redes-sociales a {
             margin-right: 16px;
         }
-    </style>
-    <style>
+
+        /* reducción de ancho de imágenes */
+        figure img {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         article p {
             max-width: 400px;
             margin-bottom: 12px;
         }
     </style>
 </head>
-<body>
+<body id="top">
     <header>
        <h1>Visual Beast</h1>
     </header>
@@ -44,7 +73,7 @@
             <h2>Sobre mi</h2>
             <p>Soy un apasionado de la musica y el arte visual, y he creado este espacio para mi vision del mundo.</p>
             <figure>
-            <img src="Foto/mi-foto.JPEG" width="200" height="300" alt="Retrato de Jesús Noriega, fondo desenfocado, mirada a cámara.">
+            <img src="Foto/mi-foto.jpg" alt="Retrato de Jesús Noriega, fondo desenfocado, mirada a cámara.">
             <figcaption>Retrato: Jesus Noriega</figcaption>
             </figure>
             <p>Mi objetivo es inspirar a otros a ver el mundo desde una perspectiva diferente y apreciar la belleza que nos rodea.</p>
@@ -53,7 +82,7 @@
         <article>
             <h2>Mi Primer post</h2>
             <figure>
-            <img src="Foto/caminemos-juntos.jpg" width="400" height="500" alt="csaminemos juntos">
+            <img src="Foto/caminemos-juntos.jpg" alt="caminemos juntos">
             <figcaption>Caminemos juntos</figcaption>
             <p>Hola a todos! Este es mi primer post en VisualBeast. Estoy emocionado de compartir mis fotografias y experiencias con ustedes. Espero que disfruten del contenido tanto como yo disfruto creandolo. ¡Gracias por visitar mi blog!</p>
             <p>Un proceso que inicie ya casi 6 años, comenzando en el evento de DurivaCom, en CDMX, me parecio un punto interesante pára mesclar dos de los mundos que me apasionan.</p>
@@ -64,32 +93,32 @@
             <p>Aqui puedes ver algunas de mis fotografias favoritas:</p>
 
             <figure>
-            <img src="Foto/biblioteca-vasconselos.jpg" width="300" height="400" alt="biblioteca vasconcelos">
+            <img src="Foto/biblioteca-vasconcelos.jpg" alt="biblioteca vasconcelos">
             <figcaption>biblioteca vasconcelos</figcaption>
             <p>Uno de los monumentos más emblemáticos de la Ciudad de México. 
                 Pareciera salir de las peliculas de ciencia ficcion, portales a otros mundos y un basto mas de conocimeinto.</p>
             </figure>
             <figure>
-            <img src="Foto/vasconcelos.jpg" width="300" height="400" alt="vasconcelos">
+            <img src="Foto/vasconcelos.jpg" alt="vasconcelos">
             <figcaption>vasconcelos</figcaption>
             <p>El interior de la Biblioteca Vasconcelos, con su impresionante arquitectura y diseño moderno, es un lugar que inspira a aprender y explorar nuevos conocimientos.</p>
             </figure>
 
             <figure>
-            <img src="Foto/museo-soumaya.jpg" width="300" height="400" alt="museo soumaya">
+            <img src="Foto/museo-soumaya.jpg" alt="museo soumaya">
             <figcaption>museo soumaya</figcaption>
             <p>El Museo Soumaya, con su arquitectura futurista y su impresionante colección de arte, es un lugar que no te puedes perder en la Ciudad de México.</p>
             </figure>
 
             <figure>
-            <img src="Foto/evolucion-en-la-telefonia.jpg" width="500" height="400" alt="evolucion en la telefonia">
+            <img src="Foto/evolucion-en-la-telefonia.jpg" alt="evolucion en la telefonia">
             <figcaption>evolucion en la telefonia</figcaption>
             <p>La evolucion de la telefonia movil, desde los primeros modelos hasta los smartphones modernos, ha sido impresionante. 
                 Esta exposicion capturada en otro de los monumentos arquitectonicos mas emblematicos de la Ciudad de Mexico, el impresionante y hermoso Museo Soumaya.</p>
             </figure>
 
             <figure>
-            <img src="Foto/sagrado-corazon.jpg" width="300" height="400" alt="sagrado corazon">
+            <img src="Foto/sagrado-corazon.jpg" alt="sagrado corazon">
             <figcaption>sagrado corazon</figcaption>
             <p>Una de las exposiciones que me parecio maravillosa fue los cuadros del sagrado corazon, el comtraste que generaban esos 5 cuadros fue una de mis favortias.</p>
             </figure>
@@ -99,24 +128,29 @@
             <p>Aquí puedes encontrar mis últimas publicaciones en el blog:</p>
         </article>
         <footer>
-            <h2>Contacto</h2>
-            <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo a:</p>
-            <a href="mailto:jnoriega972@gmail.com">
-                <i class="fa-solid fa-envelope"></i> jnoriega972@gmail.com</a>
-            <p>También puedes seguirme en mis redes sociales:</p>
-            <a href="https://www.instagram.com/yizuzcam_/" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.tiktok.com/@jesusnoriega011?lang=es" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-tiktok"></i> TikTok</a>
-            <a href="https://www.pexels.com/es-es/@jesus-noriega-1460875204/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-solid fa-camera-retro"></i> Pexels</a>
-            <a href="https://www.threads.com/@jesus_noriega02" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-threads"></i> Threads</a>
-            <p>&copy; 2024 Visual Beast. Todos los derechos reservados.</p>
-            <p>Diseñado por Jesus Noriega</p>
-            <a href="#top">Volver arriba</a>
-        </footer>
+    <h2>Contacto</h2>
+    <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo a:</p>
+    <a href="mailto:jnoriega972@gmail.com">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i> jnoriega972@gmail.com</a>
+    <p>También puedes seguirme en mis redes sociales:</p>
+    <div class="redes-sociales" aria-label="Enlaces a redes sociales">
+        <a href="https://www.instagram.com/yizuzcam_/" target="_blank" rel="noopener noreferrer" title="Instagram (se abre en nueva pestaña)" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i><span class="visually-hidden">Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@jesusnoriega011?lang=es" target="_blank" rel="noopener noreferrer" title="TikTok (se abre en nueva pestaña)" aria-label="TikTok">
+            <i class="fab fa-tiktok" aria-hidden="true"></i><span class="visually-hidden">TikTok</span>
+        </a>
+        <a href="https://www.pexels.com/es-es/@jesus-noriega-1460875204/" target="_blank" rel="noopener noreferrer" title="Pexels (se abre en nueva pestaña)" aria-label="Pexels">
+            <i class="fa-solid fa-camera-retro" aria-hidden="true"></i><span class="visually-hidden">Pexels</span>
+        </a>
+        <a href="https://www.threads.com/@jesus_noriega02" target="_blank" rel="noopener noreferrer" title="Threads (se abre en nueva pestaña)" aria-label="Threads">
+            <i class="fab fa-threads" aria-hidden="true"></i><span class="visually-hidden">Threads</span>
+        </a>
+    </div>
+    <p>&copy; 2024 Visual Beast. Todos los derechos reservados.</p><!--Derechos reservados-->
+    <p>Diseñado por Jesus Noriega</p>
+    <a href="#top">Volver arriba</a>
+</footer>
     </section>
 </body>
 </html>
